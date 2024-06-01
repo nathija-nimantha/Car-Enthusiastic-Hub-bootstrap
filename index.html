@@ -51,6 +51,33 @@
     </div>
   </header>
 
+  <!-- Chat button -->
+  <div class="chat-container">
+    <input type="checkbox" id="chatToggle" class="chat-toggle">
+    <label for="chatToggle" class="chat-button">Chat</label>
+    <div class="chat-window">
+      <div class="chat-header">
+        <span>Car Enthusiastic Hub Chat</span>
+        <label for="chatToggle" class="close-button">X</label>
+      </div>
+      <div class="chat-body">
+        <p>Welcome to our chat service!</p>
+        <input type="radio" id="startConversation" name="chatOption" class="chat-option-toggle">
+        <label for="startConversation" class="chat-option">Start New Conversation</label>
+
+        <input type="radio" id="faqs" name="chatOption" class="chat-option-toggle">
+        <label for="faqs" class="chat-option">FAQs</label>
+
+        <input type="radio" id="contactSupport" name="chatOption" class="chat-option-toggle">
+        <label for="contactSupport" class="chat-option">Contact Support</label>
+
+        <input type="text" id="chatInput1" class="chat-input" value="Start a new conversation">
+        <input type="text" id="chatInput2" class="chat-input" value="Frequently Asked Questions">
+        <input type="text" id="chatInput3" class="chat-input" value="Contacting support">
+      </div>
+    </div>
+  </div>
+
   <h1 style="text-align: center; text-decoration: underline">Car Enthusiastic Hub</h2>
 
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -88,7 +115,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div>    
 
     <hr>
 
@@ -111,7 +138,6 @@
               manufacturer Lamborghini. It is powered by a naturally aspirated V12 engine and boasts aggressive styling
               and blistering performance.</p>
             <input class="btn btn-primary" type="button" value="View">
-            <input class="btn btn-secondary" type="button" value="Edit">
 
           </div>
         </div>
@@ -125,7 +151,6 @@
               manufacturer Ferrari. It features a twin-turbocharged V8 engine and offers exceptional handling and
               performance.</p>
             <input class="btn btn-primary" type="button" value="View">
-            <input class="btn btn-secondary" type="button" value="Edit">
           </div>
         </div>
       </div>
@@ -138,20 +163,17 @@
               automotive manufacturer Porsche. It is powered by a twin-turbocharged flat-six engine and is renowned for
               its acceleration and handling capabilities.</p>
             <input class="btn btn-primary" type="button" value="View">
-            <input class="btn btn-secondary" type="button" value="Edit">
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Button trigger modal -->
     <div class="text-center m-3 ">
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Save changes
       </button>
     </div>
 
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -172,109 +194,33 @@
 
     <hr>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-1 col-md-4 col-sm-12 m-5">
-        <div class="card" style="width: 200px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1 col-md-4 col-sm-12 m-5">
-        <div class="card" style="width: 200px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1 col-md-4 col-sm-12 m-5">
-        <div class="card" style="width: 200px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1 col-md-4 col-sm-12 m-5">
-        <div class="card" style="width: 200px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1 col-md-4 col-sm-12 m-5">
-        <div class="card" style="width: 200px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1 col-md-4 col-sm-12 m-5">
-        <div class="card" style="width: 200px;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
     <hr>
 
-    <div class="container position:align-content-md-center">
-      <div class="row"></div>
-        <div class="col-sm-6 col-lg-4 mb-4" style="left: 33.3317%; top: 201px;">
-          <div class="card text-bg-primary text-center p-3">
+    <div class="container d-flex justify-content-center">
+      <div class="row w-100 h-100 m-0">
+        <div class="col-sm-6 col-lg-4 h-100 d-flex align-items-center justify-content-center">
+          <div class="card text-bg-primary text-center w-100" style="margin: 0;">
             <figure class="mb-0">
-              <blockquote class="blockquote">
+              <blockquote class="blockquote m-0 p-3">
                 <p>Any customer can have a car painted any color that he wants so long as it is black.</p>
               </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-white">
+              <figcaption class="blockquote-footer text-white">
                 Henry Ford <cite title="Source Title">(founder of the Ford Motor)</cite>
               </figcaption>
             </figure>
           </div>
         </div>
       </div>
-      [';']
     </div>
-
-
-
 
     <div class="container">
       <footer class="py-5">
         <div class="row">
           <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>Explore</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Models</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
@@ -282,31 +228,31 @@
           </div>
 
           <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>Shop</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">New Cars</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Used Cars</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessories</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Service</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>Resources</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reviews</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Maintenance Tips</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Glossary</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Events</a></li>
             </ul>
           </div>
 
           <div class="col-md-5 offset-md-1 mb-3">
             <form>
               <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <p>Stay updated with the latest news and offers.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label for="newsletter1" class="visually-hidden">Email address</label>
                 <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -315,22 +261,22 @@
             </form>
           </div>
         </div>
-
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2024 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                  <use xlink:href="#twitter" />
-                </svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram" />
-                </svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                  <use xlink:href="#facebook" />
-                </svg></a></li>
-          </ul>
-        </div>
       </footer>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
