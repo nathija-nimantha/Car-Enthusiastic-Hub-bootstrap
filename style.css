@@ -8,7 +8,7 @@ img {
 
 /* Container */
 .container{
-    position:;
+    position: center;
 }
 
 /* Chat button */
@@ -40,10 +40,10 @@ img {
   position: fixed;
   top: 80px;
   right: 20px;
-  bottom: 20px; /* Decreased margin from the bottom */
+  bottom: 20px;
   width: 300px;
   max-width: 100%;
-  height: auto; /* Changed height to auto */
+  height: auto;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -54,7 +54,6 @@ img {
 }
 
 
-/* Chat window visible when checkbox is checked */
 .chat-toggle:checked ~ .chat-window {
   display: flex;
 }
